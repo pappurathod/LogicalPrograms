@@ -7,6 +7,7 @@
             Console.WriteLine("Enter Your Choice");
             Console.WriteLine("1 = Fibonacci Series");
             Console.WriteLine("2 = Perfect Number");
+            Console.WriteLine("3 = Prime Number");
             int ch = int.Parse(Console.ReadLine());
 
             switch (ch)
@@ -20,7 +21,10 @@
                     PerfectNumber perfectnum = new PerfectNumber();
                     perfectnum.Perfect();
                     break;
-
+                case 3:
+                    PrimeNumber primenum = new PrimeNumber();
+                    primenum.Prime();
+                    break;
             }
         }
     }
